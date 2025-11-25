@@ -48,7 +48,7 @@ export function Sidebar() {
         )}
       >
         <div className="flex h-full flex-col overflow-y-auto p-6">
-          <div className="mb-8 flex items-center justify-between">
+          <div className="mb-8">
             <Image
               src="/MetaMask-logo-black.svg"
               alt="MetaMask"
@@ -56,7 +56,6 @@ export function Sidebar() {
               height={28}
               className="logo-brand h-9 w-auto"
             />
-            <ThemeToggle />
           </div>
 
           <div className="space-y-6">
@@ -93,6 +92,10 @@ export function Sidebar() {
                 ))}
               </nav>
             </div>
+          </div>
+
+          <div className="mt-auto pt-6">
+            <ThemeToggle />
           </div>
         </div>
       </aside>
