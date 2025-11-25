@@ -1,7 +1,6 @@
 import React from "react";
 import { Input } from "@/components/ui/input";
 import { ComponentPreview } from "@/components/ComponentPreview";
-import { Search, Mail } from "lucide-react";
 
 export function InputExample() {
   return (
@@ -13,22 +12,15 @@ export function InputExample() {
           </div>
         </ComponentPreview>
 
-        <ComponentPreview title="With Label" description="Input with a label.">
+        <ComponentPreview title="Email" description="Email input type.">
           <div className="w-full max-w-sm">
-            <Input label="Email" type="email" placeholder="name@example.com" />
+            <Input type="email" placeholder="name@example.com" />
           </div>
         </ComponentPreview>
 
-        <ComponentPreview title="With Icon" description="Input with a left icon.">
-          <div className="w-full max-w-sm space-y-4">
-            <Input icon={<Search size={16} />} placeholder="Search tokens..." />
-            <Input icon={<Mail size={16} />} placeholder="Email address" />
-          </div>
-        </ComponentPreview>
-
-        <ComponentPreview title="Error State" description="Input with validation error.">
+        <ComponentPreview title="Password" description="Password input type.">
           <div className="w-full max-w-sm">
-            <Input label="Password" type="password" error="Password must be at least 8 characters" defaultValue="123" />
+            <Input type="password" placeholder="Enter password" />
           </div>
         </ComponentPreview>
 
