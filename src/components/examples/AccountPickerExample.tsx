@@ -1,5 +1,5 @@
 import React from "react";
-import { AccountPicker } from "@/components/metamask/AccountPicker";
+import { AccountPicker } from "@/components/metamask/account-picker";
 import { ComponentPreview } from "@/components/ComponentPreview";
 
 export function AccountPickerExample() {
