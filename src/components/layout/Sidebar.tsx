@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { primitives, metamaskComponents } from "@/config/components";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,17 +47,16 @@ export function Sidebar() {
           isOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
-        <div className="h-full overflow-y-auto p-6">
-          <div className="mb-8">
-            <h1 className="flex items-center gap-2 text-heading-md weight-semibold text-default">
-              <Image
-                src="/MetaMask-logo-black.svg"
-                alt="MetaMask"
-                width={140}
-                height={28}
-                className="logo-brand h-9 w-auto"
-              />
-            </h1>
+        <div className="flex h-full flex-col overflow-y-auto p-6">
+          <div className="mb-8 flex items-center justify-between">
+            <Image
+              src="/MetaMask-logo-black.svg"
+              alt="MetaMask"
+              width={140}
+              height={28}
+              className="logo-brand h-9 w-auto"
+            />
+            <ThemeToggle />
           </div>
 
           <div className="space-y-6">

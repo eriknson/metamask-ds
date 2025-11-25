@@ -24,11 +24,11 @@ export default function Home() {
           MetaMask DS
         </h1>
 
-        <p className="mt-3 max-w-xs text-body-md text-alternative">
-          A mobile-first design system for MetaMask components.
+        <p className="mt-3 max-w-sm text-body-md text-alternative text-balance">
+          Component library and design reference for building MetaMask interfaces.
         </p>
 
-        <Button asChild size="lg" className="mt-8">
+        <Button asChild size="lg" className="mt-8 bg-white text-black hover:bg-gray-100">
           <Link href="/components/button">
             Explore Components
             <ArrowRight size={18} />
