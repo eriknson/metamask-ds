@@ -133,8 +133,10 @@ body {
   font-weight: var(--font-weight-regular);
 }
 
-a {
-  color: var(--color-primary-default);
+@layer base {
+  a {
+    color: var(--color-primary-default);
+  }
 }
 
 ::selection {

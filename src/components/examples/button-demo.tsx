@@ -5,7 +5,7 @@ import { Mail, Loader2, Trash } from "lucide-react";
 export function ButtonDemo() {
   return (
     <div className="space-y-6">
-      <ComponentPreview title="Primary" description="The default button style" code={`<Button>Default</Button>`}>
+      <ComponentPreview title="Default" description="The default button style" code={`<Button>Default</Button>`}>
         <Button>Default</Button>
       </ComponentPreview>
 
